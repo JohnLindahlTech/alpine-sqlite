@@ -55,4 +55,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: latest,${{ env.IMAGE }}:${{ env.SQLITE_VERSION }}-alpine-${{ env.ALPINE_VERSION }}
+          tags: ${{ env.IMAGE }}:latest,${{ env.IMAGE }}:${{ env.SQLITE_VERSION }}-alpine-${{ env.ALPINE_VERSION }}
