@@ -12,4 +12,4 @@ RUN apk update && apk add --no-cache sqlite=$SQLITE_VERSION curl=$CURL_VERSION w
   mkdir -p /root/db
 
 WORKDIR /root/db
-ENTRYPOINT [ "sqlite3" ]
+CMD [ "sqlite3" ]
