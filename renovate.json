@@ -2,7 +2,7 @@
   "extends": ["config:recommended"],
   "regexManagers": [
     {
-      "fileMatch": ["(^|/)Dockerfile$", ".github/workflows/*.yml$"],
+      "fileMatch": ["(^|/)Dockerfile$", ".github/workflows/.*\\.ya?ml$"],
       "matchStrings": [
         "\\s*#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=\"?(?<currentValue>.*?)\"?\\s",
         "\\s*#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_VERSION: \"?(?<currentValue>.*?)\"?\\s"
