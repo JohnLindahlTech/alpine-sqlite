@@ -1,6 +1,8 @@
 name: Docker Publish
 on:
   push:
+    paths:
+      - Dockerfile
     branches:
       - main
 env:
