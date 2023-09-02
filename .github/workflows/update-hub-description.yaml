@@ -1,0 +1,22 @@
+name: Update Docs on Docker hub
+on:
+  push:
+    paths:
+      - README.md
+    branches:
+      - main
+env:
+  IMAGE: johnlindahl/sqlite
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Docker Hub Description
+        uses: peter-evans/dockerhub-description@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: ${{env.IMAGE}}
