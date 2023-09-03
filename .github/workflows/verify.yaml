@@ -1,8 +1,6 @@
 name: Docker Verify
 on:
   push:
-    paths:
-      - Dockerfile
     branches:
       - "**"
       - "!main"
