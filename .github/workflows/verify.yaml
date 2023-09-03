@@ -4,6 +4,7 @@ on:
     paths:
       - Dockerfile
     branches:
+      - "**"
       - "!main"
 env:
   IMAGE: johnlindahl/sqlite
