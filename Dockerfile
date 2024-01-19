@@ -1,4 +1,4 @@
-FROM alpine:3.18.3
+FROM alpine:3.19.0
 # renovate: datasource=repology depName=alpine_3_18/sqlite
 ENV SQLITE_VERSION=3.41.2-r3
 # renovate: datasource=repology depName=alpine_3_18/curl
