@@ -7,7 +7,7 @@ on:
 env:
   IMAGE: johnlindahl/sqlite
   # renovate: datasource=docker depName=alpine
-  ALPINE_VERSION: 3.19.1
+  ALPINE_VERSION: 3.20.3
   # renovate: datasource=repology depName=alpine_3_18/sqlite
   SQLITE_VERSION: 3.41.2-r3
 jobs:
